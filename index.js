@@ -2,26 +2,26 @@ $( () => {
 
 const loadCoinData = () => {
   for (i = 0;i < 20; i++){
-    let cardStr = `
+    $(".card-container").append(`
     <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h5 class="card-title">Coin </h5>
-        <p class="card-text">Coin Name</p>
+        <h5 class="card-title">${List[i].symbol}Coin </h5>
+        <p class="card-text">${List[i].name}Coin Name</p>
         <a href="#" class="btn btn-primary">More Info</a>
-    </div>
-    
+    </div>  
+    <div class="form-check form-switch" id="toggle-btn">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+</div>
+</div>
     `
-  $('.card-body').append(cardStr)
-
+    )
   }
-
-
-loadCoinData()
+  
+  
+  loadCoinData()
 }})
 
-
-$('#load-coins').click(function (e){
-  e.preventDefault()
+$('#load-coins').click(function (){
 
   $.ajax({
     url: `https://api.coingecko.com/api/v3/coins/list`,
