@@ -3,13 +3,27 @@
     background-image: url(https://image.freepik.com/free-photo/cryptocurrency-coding-digital-blue-background-open-source-blockchain-concept_53876-124644.jpg);
     background-repeat: no-repeat;
 } */
-.background-img{
-    background-image: url(https://image.freepik.com/free-photo/cryptocurrency-coding-digital-blue-background-open-source-blockchain-concept_53876-124644.jpg);
-    background-repeat: no-repeat;
 
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+  #bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }
+#nav-bar{
+    height: 100px;
 }
-
-
 
 .card-container{
     margin-top: 5%;
