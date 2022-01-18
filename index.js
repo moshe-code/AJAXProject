@@ -12,6 +12,9 @@ $(() => {
       <h5 class="card-title">${list[i].symbol}Coin </h5>
       <p class="card-text">${list[i].name}Coin Name</p>
       <a href="#" class="btn btn-primary">More Info</a>
+      <div class="form-check form-switch" id="toggle-btn">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
       </div>  
       </div>
       </div>
